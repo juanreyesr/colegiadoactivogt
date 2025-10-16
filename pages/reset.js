@@ -32,7 +32,7 @@ export default function ResetPassword() {
 
   return (
     <div style={{ maxWidth: '400px', margin: '2rem auto', padding: '1rem', background: '#fff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-      <h1>Reiniciar contraseña</h1>
+      <h1>Generar o reiniciar contraseña</h1>
       <p>Si es la primera vez que ingresas, coloca tu número de colegiado y presiona el botón para generar una nueva contraseña.</p>
       <form onSubmit={handleReset}>
         <label htmlFor="num">Número de Colegiado</label>

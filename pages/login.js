@@ -47,7 +47,8 @@ export default function Login() {
         <button type="submit" disabled={loading}>{loading ? 'Ingresando...' : 'Ingresar'}</button>
       </form>
       <p style={{ marginTop: '1rem' }}>
-        <a href="/reset">¿Olvidaste tu contraseña?</a>
+        {/* Link to reset page doubles as first time user account creation */}
+        <a href="/reset">Crear usuario / Olvidé mi contraseña</a>
       </p>
       <p>
         <a href="/">Volver</a>

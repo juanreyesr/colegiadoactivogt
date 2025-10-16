@@ -59,6 +59,12 @@ export default function Home() {
           Acceso administrador
         </a>
       </p>
+      {/* Enlace para crear usuario o restablecer contraseña */}
+      <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>
+        <a href="/reset" style={{ color: '#0070f3', textDecoration: 'underline' }}>
+          Crear usuario / Olvidé mi contraseña
+        </a>
+      </p>
     </div>
   );
 }

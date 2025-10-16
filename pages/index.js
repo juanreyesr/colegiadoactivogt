@@ -53,6 +53,12 @@ export default function Home() {
           )}
         </div>
       )}
+      {/* Enlace para acceso de administrador */}
+      <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>
+        <a href="/admin" style={{ color: '#0070f3', textDecoration: 'underline' }}>
+          Acceso administrador
+        </a>
+      </p>
     </div>
   );
 }

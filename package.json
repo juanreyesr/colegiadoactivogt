@@ -11,7 +11,13 @@
     "@supabase/supabase-js": "^2.0.0",
     "bcryptjs": "^2.4.3",
     "csv-parse": "^5.3.8",
-    "date-fns": "^2.31.0",
+    // Use a valid published version of date-fns. The NPM registry does not
+    // contain a 2.31.0 release (which causes build failures on Vercel). The
+    // latest major release with full backwards‑compatible APIs as of 2025 is
+    // v4.1.0, which provides the same functions used in this project (e.g.,
+    // parseISO, isAfter, format). Using the caret (^) prefix allows minor
+    // updates (4.x) without breaking changes.
+    "date-fns": "^4.1.0",
     "next": "^14.0.0",
     "papaparse": "^5.3.2",
     "pdf-lib": "^1.17.1",
